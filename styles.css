@@ -1,0 +1,146 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(204, 43%, 93%);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+h3,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.card {
+  font-family: "Karla", sans-serif;
+  width: 315px;
+  box-shadow: 10px 10px 35px -25px hsl(0, 0%, 0%);
+}
+.section {
+  padding: 20px;
+}
+.intro {
+  background-color: white;
+}
+h1 {
+  color: hsl(179, 62%, 43%);
+}
+h2 {
+  margin-bottom: 0.8rem;
+}
+h1,
+h2 {
+  font-size: 1.3rem;
+}
+.intro > * {
+  margin: 1.2rem 0;
+}
+#money-back {
+  color: hsl(71, 73%, 54%);
+  font-weight: 700;
+}
+.intro > p {
+  color: hsl(218, 22%, 67%);
+  font-size: 0.9rem;
+}
+h2,
+#dollar-amount,
+button {
+  color: white;
+}
+.pricing > p,
+.why-join > ul {
+  color: hsl(204, 43%, 93%);
+}
+.pricing {
+  background-color: hsl(179, 62%, 43%);
+  padding-bottom: 0;
+}
+.pricing > h2,
+#dollar-amount,
+#per-month {
+  display: inline-block;
+}
+#dollar-amount {
+  font-size: 2rem;
+  font-weight: 700;
+}
+#per-month {
+  color: hsl(204, 43%, 83%);
+  margin-left: 0.6rem;
+}
+button {
+  background-color: hsl(71, 73%, 54%);
+  text-transform: capitalize;
+  width: 100%;
+  height: 3.2rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 700;
+  margin: 1.5rem 0;
+  box-shadow: 10px 10px 35px -19px hsl(0, 0%, 0%);
+}
+.why-join {
+  background-color: hsl(179, 82%, 42%);
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+@media screen and (min-width: 75rem){
+  .card{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 350px 350px;
+    grid-template-rows: 220px 300px;
+    grid-template-areas: "Intro Intro";
+  }
+  .intro{
+    grid-area: Intro;
+  }
+  button{
+    margin-top: 2.5rem;
+  }
+  .pricing, .why-join{
+    padding: 2rem 2.5rem;
+  }
+  .intro > p{
+    font-size: 1.2rem;
+  }
+}
